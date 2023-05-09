@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations undgo er the License.
 */
 
-package serverlessquota 
+package serverless
 
 // GroupName is the group name used in this package
 const (
