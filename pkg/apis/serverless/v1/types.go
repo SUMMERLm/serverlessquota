@@ -24,15 +24,15 @@ import (
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // Serverless is a specification for a Serverless resource
-type Serverless struct {
+type Serverlessquota struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec ServerlessSpec `json:"spec"`
+	Spec ServerlessquotaSpec `json:"spec"`
 }
 
-// ServerlessSpec is the spec for a Foo resource
-type ServerlessSpec struct {
+// ServerlessquotaSpec is the spec for a Foo resource
+type ServerlessquotaSpec struct {
 	MyAreaName     string `json:"myAreaName"`
 	NodeAreaType   string `json:"nodeAreaType"`
 	SupervisorName string `json:"supervisorName"`
@@ -40,10 +40,10 @@ type ServerlessSpec struct {
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
-// ServerlessList is a list of Foo resources
-type ServerlessList struct {
+// ServerlessquotaList is a list of Foo resources
+type ServerlessquotaList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata"`
 
-	Items []Serverless `json:"items"`
+	Items []Serverlessquota `json:"items"`
 }

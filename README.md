@@ -1,1 +1,0 @@
-quoat manage
